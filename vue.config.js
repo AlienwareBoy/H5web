@@ -14,7 +14,7 @@ module.exports = {
     //命名
     config.resolve.alias
       .set('@', resolve('src'))
-      .set('ASSET', resolve('src/assets'))
+      .set('IMAGES', resolve('src/assets/images'))
       .set('VIEW', resolve('src/views'))
       .set('COMPONENT', resolve('src/components'))
       .set('UTIL', resolve('src/utils'))

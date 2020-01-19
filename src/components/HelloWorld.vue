@@ -1,7 +1,7 @@
 <template>
-  <div class="hello">
+  <div class="hello" @click.stop="click">
+    <img src="~IMAGES/logo.png" alt="">
     <h1>{{ msg }}</h1>
-     <span>张三王五李四</span>
   </div>
 </template>
 
@@ -10,6 +10,13 @@ export default {
   name: 'HelloWorld',
   props: {
     msg: String
+  },
+  methods:{
+    click(){
+      this.$router.push({
+        name:'hellowWorld'
+      })
+    }
   }
 }
 </script>

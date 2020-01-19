@@ -1,23 +1,21 @@
 <template>
   <div id="app">
     <div id="nav">
-      <!-- <keep-alive :include=>
-      
-      </keep-alive> -->
-      <router-view></router-view>
+      <keep-alive :include="$route.meta.keepAlive">
+        <router-view></router-view>
+      </keep-alive>
     </div>
-    <router-view/>
   </div>
 </template>
 <script>
 export default {
   data() {
     return {
-      science:''
-    };
+      science: ''
+    }
   },
-  mounted(){
-    console.log('当前环境为',process.env.VUE_APP_TITLE)
+  mounted() {
+    console.log('当前环境为', process.env.VUE_APP_TITLE)
   }
 }
 </script>
