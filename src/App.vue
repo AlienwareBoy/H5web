@@ -9,7 +9,18 @@
     <router-view/>
   </div>
 </template>
-
+<script>
+export default {
+  data() {
+    return {
+      science:''
+    };
+  },
+  mounted(){
+    console.log('当前环境为',process.env.VUE_APP_TITLE)
+  }
+}
+</script>
 <style lang="scss">
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
