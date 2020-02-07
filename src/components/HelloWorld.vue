@@ -1,7 +1,7 @@
 <template>
   <div class="hello" @click.stop="click">
     <img src="~IMAGES/logo.png" alt="">
-    <h1>{{ msg }}</h1>
+    <p>{{ msg }}</p>
   </div>
 </template>
 
@@ -25,7 +25,7 @@ export default {
 <style scoped lang="scss">
 .hello{
   span{
-    font-size: 30px;
+    font-size: 12px;
   }
 }
 </style>

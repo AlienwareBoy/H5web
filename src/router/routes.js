@@ -1,19 +1,24 @@
-const list=[{
-  path:'/',
-  name:'',
-  component:resolve => require(['VIEW/Home'], resolve),
-  meta:{
-    title:'首页',
-    keepAlive:false
+const list = [
+  {
+    path: "/",
+    name: "home",
+    component: resolve => require(["VIEW/Home"], resolve),
+    meta: {
+      name: "home",
+      title: "首页",
+      keepAlive: true,
+      showLeft: false
+    }
+  },
+  {
+    path: "/index",
+    name: "index",
+    component: resolve => require(["VIEW/index"], resolve),
+    meta: {
+      title: "首页",
+      keepAlive: true
+    }
   }
-},{
-  path:'/hellowWorld',
-  name:'hellowWorld',
-  component:resolve => require(['VIEW/About'], resolve),
-  meta:{
-    title:'首页',
-    keepAlive:true
-  }
-}]
+];
 
-export default list
+export default list;

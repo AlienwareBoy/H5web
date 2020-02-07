@@ -1,19 +1,17 @@
 <template>
   <div class="about">
     <h1>This is an about page</h1>
+    
   </div>
 </template>
 <script>
 export default {
-  data(){
-    return {
-
-    }
+  name: "about",
+  data() {
+    return {};
   },
-  methods:{
-    click(){
-      
-    }
+  methods: {
+    click() {}
   }
-}
+};
 </script>
