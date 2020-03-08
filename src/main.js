@@ -4,12 +4,12 @@ import router from "./router/index.js";
 import store from "./store";
 import "amfe-flexible/index.js";
 import "./utils/rem.js";
+import Mint from 'mint-ui';
+import './scss/index.scss';
+import 'mint-ui/lib/style.css';
 Vue.config.productionTip = false;
 
-import Vant from "vant";
-import "vant/lib/index.css";
-
-Vue.use(Vant);
+Vue.use(Mint);
 new Vue({
   router,
   store,
