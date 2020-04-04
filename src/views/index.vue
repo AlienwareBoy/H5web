@@ -2,7 +2,7 @@
   <div class="about">
     <div id="container" style="height:300px"></div>
     <h1>当前地理位置为{{province}}{{city}}</h1>
-    <p id="demo" ref="demo">点击这个按钮，获得您的坐标</p>
+    <p id="demo" ref="demo">点击这个按钮，获得您的坐标1</p>
     <!-- <button @click.stop="getLocation()">试一下</button> -->
     <mt-button @click.native='getCurLocation'>开始查询当前位置</mt-button>
     <!-- <mt-button @click.navive="showWatchPosition">开始查询当前位置</mt-button> -->
